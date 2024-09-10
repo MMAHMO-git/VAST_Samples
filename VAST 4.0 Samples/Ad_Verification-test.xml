@@ -1,66 +1,304 @@
-<VAST version="4.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
-  <Ad id="20001" sequence="1" conditionalAd="false">
-    <InLine>
-      <AdSystem version="4.0">iabtechlab</AdSystem>
-      <Error>http://example.com/error</Error>
-      <Extensions>
-        <Extension type="iab-Count">
-          <total_available>
-            <![CDATA[ 2 ]]>
-          </total_available>
-        </Extension>
-      </Extensions>
-      <Impression id="Impression-ID">http://example.com/track/impression</Impression>
-      <Pricing model="cpm" currency="USD">
-        <![CDATA[ 25.00 ]]>
-      </Pricing>
-      <AdTitle>iabtechlab video ad</AdTitle>
-      <AdVerifications>
-        <Verification>
-          <JavaScriptResource>
-            <![CDATA[https://verificationcompany1.com/verification_script1.js]]>
-          </JavaScriptResource>
-        </Verification>
-        <Verification>
-          <JavaScriptResource>
-            <![CDATA[https://verificationcompany.com/untrusted.js]]>
-          </JavaScriptResource>
-        </Verification>
-      </AdVerifications>
-      <Advertiser>IAB Sample Company</Advertiser>
-      <Category authority="foo" />
-      <Creatives>
-        <Creative id="5480" sequence="1" adId="2447226">
-          <UniversalAdId idRegistry="Ad-ID" idValue="8465">8465</UniversalAdId>
-          <Linear>
-            <TrackingEvents>
-              <Tracking event="start">http://example.com/tracking/start</Tracking>
-              <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
-              <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
-              <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
-              <Tracking event="complete">http://example.com/tracking/complete</Tracking>
-              <Tracking event="progress" offset="00:00:10">http://example.com/tracking/progress-10</Tracking>
-            </TrackingEvents>
-            <Duration>00:00:16</Duration>
-            <MediaFiles>
-              <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="H.264">
-                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4]]>
-              </MediaFile>
-              <MediaFile id="5244" delivery="progressive" type="video/mp4" bitrate="1000" width="854" height="480" minBitrate="700" maxBitrate="1500" scalable="1" maintainAspectRatio="1" codec="H.264">
-                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-mid-resolution.mp4]]>
-              </MediaFile>
-              <MediaFile id="5246" delivery="progressive" type="video/mp4" bitrate="600" width="640" height="360" minBitrate="500" maxBitrate="700" scalable="1" maintainAspectRatio="1" codec="H.264">
-                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-low-resolution.mp4]]>
-              </MediaFile>
-            </MediaFiles>
-            <VideoClicks>
-              <ClickThrough id="blog">
-                <![CDATA[https://iabtechlab.com]]>
-              </ClickThrough>
-            </VideoClicks>
-          </Linear>
-        </Creative>
-      </Creatives>
-    </InLine>
-  </Ad>
+<VAST version="3.0">
+<Ad sequence="0">
+<InLine>
+<AdSystem>Omen</AdSystem>
+<AdTitle>Roland Garros - Longuines</AdTitle>
+<Impression>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=impression ]]>
+
+</Impression>
+<Creatives>
+<Creative id="source/367465a2-07d3cb95-9b648bd87e-MP4">
+<Linear>
+<Duration>00:00:30.000</Duration>
+<TrackingEvents>
+<Tracking event="start">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=start ]]>
+
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=firstQuartile ]]>
+
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=midpoint ]]>
+
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=thirdQuartile ]]>
+
+</Tracking>
+<Tracking event="complete">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=complete ]]>
+
+</Tracking>
+
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=7ce756cf-994d-49c2-b438-8da3ca1b796a&type=click ]]>
+
+</ClickTracking>
+
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="source/367465a2-07d3cb95-9b648bd87e-MP4" delivery="progressive" type="video/mp4" bitrate="2130" width="1920" height="1080">
+<![CDATA[ https://assets.production.cloud.omen-ctv.com/creatives/07d3cb95/versions/9b648bd87e/overlay.mp4 ]]>
+
+</MediaFile>
+
+</MediaFiles>
+
+</Linear>
+<CreativeExtentions>
+<CreativeExtention type="olyzon-format">
+<Type>PIP</Type>
+<Configuration>
+<ResizeRatio>0.4</ResizeRatio>
+<Speed>800</Speed>
+<Duration>auto</Duration>
+<Anchor>
+<X>1142</X>
+<Y>232</Y>
+
+</Anchor>
+
+</Configuration>
+
+</CreativeExtention>
+
+</CreativeExtentions>
+
+</Creative>
+
+</Creatives>
+
+</InLine>
+
+</Ad>
+<Ad sequence="1">
+<InLine>
+<AdSystem>Omen</AdSystem>
+<AdTitle>The new Range Rover Velar - L-Shape Right</AdTitle>
+<Impression>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=impression ]]>
+
+</Impression>
+<Creatives>
+<Creative id="source/367465a2-36d29975-378f37f002-MP4">
+<Linear>
+<Duration>00:00:15.960</Duration>
+<TrackingEvents>
+<Tracking event="start">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=start ]]>
+
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=firstQuartile ]]>
+
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=midpoint ]]>
+
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=thirdQuartile ]]>
+
+</Tracking>
+<Tracking event="complete">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=complete ]]>
+
+</Tracking>
+
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=21dbc822-225e-4a5d-9511-87609fef630d&type=click ]]>
+
+</ClickTracking>
+<ClickTracking>
+<![CDATA[ https://example.com/click.png ]]>
+
+</ClickTracking>
+
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="source/367465a2-36d29975-378f37f002-MP4" delivery="progressive" type="video/mp4" bitrate="2130" width="1920" height="1080">
+<![CDATA[ https://assets.production.cloud.omen-ctv.com/creatives/36d29975/versions/378f37f002/overlay.mp4 ]]>
+
+</MediaFile>
+
+</MediaFiles>
+
+</Linear>
+<CreativeExtentions>
+<CreativeExtention type="olyzon-format">
+<Type>L-Shape</Type>
+<Configuration>
+<ResizeRatio>0.8</ResizeRatio>
+<Position>top_left</Position>
+<Speed>504</Speed>
+<Duration>auto</Duration>
+
+</Configuration>
+
+</CreativeExtention>
+
+</CreativeExtentions>
+
+</Creative>
+
+</Creatives>
+
+</InLine>
+
+</Ad>
+<Ad sequence="2">
+<InLine>
+<AdSystem>Omen</AdSystem>
+<AdTitle>Porter votre passion - KitchenAid</AdTitle>
+<Impression>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=impression ]]>
+
+</Impression>
+<Creatives>
+<Creative id="source/367465a2-3fc8f45c-ac47c7b525-MP4">
+<Linear>
+<Duration>00:00:30.000</Duration>
+<TrackingEvents>
+<Tracking event="start">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=start ]]>
+
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=firstQuartile ]]>
+
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=midpoint ]]>
+
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=thirdQuartile ]]>
+
+</Tracking>
+<Tracking event="complete">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=complete ]]>
+
+</Tracking>
+
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=9fb208a3-fcc6-4284-a373-dccac9c138d6&type=click ]]>
+
+</ClickTracking>
+
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="source/367465a2-3fc8f45c-ac47c7b525-MP4" delivery="progressive" type="video/mp4" bitrate="2130" width="1920" height="1080">
+<![CDATA[ https://assets.production.cloud.omen-ctv.com/creatives/3fc8f45c/versions/ac47c7b525/overlay.mp4 ]]>
+
+</MediaFile>
+
+</MediaFiles>
+
+</Linear>
+<CreativeExtentions>
+<CreativeExtention type="olyzon-format">
+<Type>L-Shape</Type>
+<Configuration>
+<ResizeRatio>0.8</ResizeRatio>
+<Position>top_right</Position>
+<Speed>1000</Speed>
+<Duration>auto</Duration>
+
+</Configuration>
+
+</CreativeExtention>
+
+</CreativeExtentions>
+
+</Creative>
+
+</Creatives>
+
+</InLine>
+
+</Ad>
+<Ad sequence="3">
+<InLine>
+<AdSystem>Omen</AdSystem>
+<AdTitle>Because you’re worth it - Sketch 1</AdTitle>
+<Impression>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=impression ]]>
+
+</Impression>
+<Creatives>
+<Creative id="source/367465a2-4520038f-3034225b5f-MP4">
+<Linear>
+<Duration>00:00:30.000</Duration>
+<TrackingEvents>
+<Tracking event="start">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=start ]]>
+
+</Tracking>
+<Tracking event="firstQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=firstQuartile ]]>
+
+</Tracking>
+<Tracking event="midpoint">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=midpoint ]]>
+
+</Tracking>
+<Tracking event="thirdQuartile">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=thirdQuartile ]]>
+
+</Tracking>
+<Tracking event="complete">
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=complete ]]>
+
+</Tracking>
+
+</TrackingEvents>
+<VideoClicks>
+<ClickTracking>
+<![CDATA[ https://track.production.cloud.omen-ctv.com/ad?id=4b7fe0bc-4b7d-4072-9d22-706830b3f310&type=click ]]>
+
+</ClickTracking>
+
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="source/367465a2-4520038f-3034225b5f-MP4" delivery="progressive" type="video/mp4" bitrate="2130" width="1920" height="1080">
+<![CDATA[ https://assets.production.cloud.omen-ctv.com/creatives/4520038f/versions/3034225b5f/overlay.mp4 ]]>
+
+</MediaFile>
+
+</MediaFiles>
+
+</Linear>
+<CreativeExtentions>
+<CreativeExtention type="olyzon-format">
+<Type>L-Shape</Type>
+<Configuration>
+<ResizeRatio>0.8</ResizeRatio>
+<Position>top_right</Position>
+<Speed>500</Speed>
+<Duration>auto</Duration>
+
+</Configuration>
+
+</CreativeExtention>
+
+</CreativeExtentions>
+
+</Creative>
+
+</Creatives>
+
+</InLine>
+
+</Ad>
+<style id="__MIRROR_SCROLL_BEHAVIOR_c1o8bcwrfpm">* { scroll-behavior: auto !important }</style>
+
 </VAST>
