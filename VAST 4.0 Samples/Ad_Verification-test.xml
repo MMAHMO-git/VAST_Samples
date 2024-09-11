@@ -50,8 +50,8 @@
 </MediaFiles>
 
 </Linear>
-<CreativeExtentions>
-<CreativeExtention type="olyzon-format">
+<CreativeExtensions>
+<CreativeExtension type="olyzon-format">
 <Type>PIP</Type>
 <Configuration>
 <ResizeRatio>0.4</ResizeRatio>
@@ -65,9 +65,9 @@
 
 </Configuration>
 
-</CreativeExtention>
+</CreativeExtension>
 
-</CreativeExtentions>
+</CreativeExtensions>
 
 </Creative>
 
