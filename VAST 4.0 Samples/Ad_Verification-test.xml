@@ -131,8 +131,8 @@
 </MediaFiles>
 
 </Linear>
-<CreativeExtentions>
-<CreativeExtention type="olyzon-format">
+<CreativeExtensions>
+<CreativeExtension type="olyzon-format">
 <Type>L-Shape</Type>
 <Configuration>
 <ResizeRatio>0.8</ResizeRatio>
@@ -142,9 +142,9 @@
 
 </Configuration>
 
-</CreativeExtention>
+</CreativeExtension>
 
-</CreativeExtentions>
+</CreativeExtensions>
 
 </Creative>
 
@@ -204,8 +204,8 @@
 </MediaFiles>
 
 </Linear>
-<CreativeExtentions>
-<CreativeExtention type="olyzon-format">
+<CreativeExtensions>
+<CreativeExtension type="olyzon-format">
 <Type>L-Shape</Type>
 <Configuration>
 <ResizeRatio>0.8</ResizeRatio>
@@ -215,9 +215,9 @@
 
 </Configuration>
 
-</CreativeExtention>
+</CreativeExtension>
 
-</CreativeExtentions>
+</CreativeExtensions>
 
 </Creative>
 
